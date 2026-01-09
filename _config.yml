@@ -1,0 +1,10 @@
+title: My Blog
+email: youremail@example.com
+description: A personal blog built using GitHub Pages and Jekyll.
+baseurl: ""
+url: "https://YOUR_USERNAME.github.io"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
