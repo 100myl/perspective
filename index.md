@@ -3,8 +3,9 @@ layout: default
 title: Home
 ---
 
-# 🎨 Visual Background Applied
+# 🚀 Navbar Added
 
-If you see a **colorful gradient background**  
-and this content is inside a **white rounded card**,  
-then your GUI background is working perfectly.
+You should now see:
+- A white navbar on top
+- Gradient background
+- White content card below the navbar
