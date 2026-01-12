@@ -1,10 +1,12 @@
 title: Pal's Blog
 email: pal.somil@gmail.com
 description: A personal blog built out of curiosity.
-baseurl: ""
+
 url: "https://100myl.github.io"
+baseurl: "/perspective"
 
 markdown: kramdown
+theme: null
 
 plugins:
   - jekyll-feed
