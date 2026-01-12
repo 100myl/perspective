@@ -3,6 +3,20 @@ layout: default
 title: Home
 ---
 
-## 🎉 UI IS NOW WORKING
+# Welcome to Pal’s Blog 👋
 
-If you see a **gradient background** and a **white card**, the GUI is fixed.
+This blog is built on **GitHub Pages + Jekyll** and styled manually.
+
+---
+
+## Latest Posts
+
+<div class="post-card">
+  <h3>First Post</h3>
+  <p>This is how blog cards will look.</p>
+</div>
+
+<div class="post-card">
+  <h3>Second Post</h3>
+  <p>Clean UI, animations, and layout.</p>
+</div>
