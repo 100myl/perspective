@@ -3,13 +3,13 @@ layout: default
 title: Home
 ---
 
-## Latest Posts
+# Latest Posts
 
-<ul>
 {% for post in site.posts %}
-  <li>
-    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    <small>({{ post.date | date: "%b %d, %Y" }})</small>
-  </li>
+<div class="post-card">
+  <h2>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
+  <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+</div>
 {% endfor %}
-</ul>
