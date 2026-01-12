@@ -119,3 +119,169 @@ footer {
     display: none;
   }
 }
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 24px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Post title hover */
+.post-card h2 a:hover {
+  color: var(--accent);
+}
+
+/* Smooth text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Better mobile view */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 24px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Post title hover */
+.post-card h2 a:hover {
+  color: var(--accent);
+}
+
+/* Smooth text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Better mobile view */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 24px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Post title hover */
+.post-card h2 a:hover {
+  color: var(--accent);
+}
+
+/* Smooth text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Better mobile view */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 24px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Post title hover */
+.post-card h2 a:hover {
+  color: var(--accent);
+}
+
+/* Smooth text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Better mobile view */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
