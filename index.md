@@ -3,20 +3,8 @@ layout: default
 title: Home
 ---
 
-# Welcome to Pal’s Blog 👋
+# 🎨 Visual Background Applied
 
-This blog is built on **GitHub Pages + Jekyll** and styled manually.
-
----
-
-## Latest Posts
-
-<div class="post-card">
-  <h3>First Post</h3>
-  <p>This is how blog cards will look.</p>
-</div>
-
-<div class="post-card">
-  <h3>Second Post</h3>
-  <p>Clean UI, animations, and layout.</p>
-</div>
+If you see a **colorful gradient background**  
+and this content is inside a **white rounded card**,  
+then your GUI background is working perfectly.
