@@ -1,46 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ page.title }}</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  <!-- Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <h1 class="logo">{{ site.title }}</h1>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/about' | relative_url }}">About</a>
-      </nav>
-      <button id="themeToggle">🌙</button>
-    </div>
-  </header>
 
-  <!-- Page Content -->
-  <main class="container fade-in">
-    {{ content }}
-  </main>
+  <div class="box">
+    <h1>GRAPHICAL UI TEST</h1>
+    <p>If this box is centered and styled, UI works.</p>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
+  {{ content }}
 
-  <!-- JS -->
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-  <script>
-    lucide.createIcons();
-  </script>
 </body>
 </html>
