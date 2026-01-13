@@ -165,3 +165,74 @@
   line-height: 1.8;
   font-size: 17px;
 }
+/* ===========================
+   BLOG CARD LAYOUT
+=========================== */
+
+.blog-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: white;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.25);
+}
+
+.blog-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-card .date {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.blog-card .excerpt {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ffe082;
+}
+
+/* ===========================
+   POST PAGE STYLE
+=========================== */
+
+.post {
+  max-width: 800px;
+  margin: auto;
+}
+
+.post h1 {
+  margin-bottom: 10px;
+}
+
+.post-date {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.post-content {
+  line-height: 1.8;
+  font-size: 17px;
+}
