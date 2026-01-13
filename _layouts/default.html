@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ page.title }} | Pal's Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Correct CSS path for project page -->
-  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="nav-inner">
-      <div class="logo">{{ site.title }}</div>
-      <nav class="nav-links">
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/about">About</a>
-      </nav>
+  <!-- NAVBAR TABS -->
+  <nav class="navbar">
+    <div class="logo">Pal's Blog</div>
+    <div class="tabs">
+      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+      <a href="{{ '/blog' | relative_url }}" class="{% if page.url == '/blog/' %}active{% endif %}">Blog</a>
+      <a href="{{ '/about' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
     </div>
-  </header>
+  </nav>
 
   <!-- PAGE CONTENT -->
-  <
+  <main class="content">
+    {{ content }}
+  </main>
+
+</body>
+</html>
