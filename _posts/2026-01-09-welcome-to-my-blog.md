@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Welcome to Pal Blog"
-date: 2026-01-09
+title: "My First Blog Post"
+date: 2026-01-13
+excerpt: "This is my first post on Pal's Blog built using GitHub Pages."
 ---
 
-This is my **first blog post** 🎉
+Welcome to my first blog post 🎉  
 
-Welcome to my blog built using GitHub Pages.
+This blog is built using **Jekyll & GitHub Pages**.
