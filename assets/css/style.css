@@ -181,3 +181,42 @@ body {
   background: #e5e7eb;
   transform: translateY(-1px);
 }
+.write-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.write-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.write-container label {
+  font-weight: 600;
+  margin-top: 1rem;
+  display: block;
+}
+
+.write-container input,
+.write-container textarea {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.write-container button {
+  margin-top: 1.5rem;
+  background: #667eea;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
