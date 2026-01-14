@@ -1,60 +1,64 @@
-/* ---------- Global ---------- */
+/* ---------- Base ---------- */
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
   line-height: 1.7;
   color: #242424;
 
-  /* Colorful background */
+  /* Animated gradient background */
   background: linear-gradient(
-    135deg,
+    120deg,
     #667eea,
     #764ba2,
-    #89f7fe
+    #6ee7b7,
+    #93c5fd
   );
   background-size: 400% 400%;
-  animation: gradientMove 15s ease infinite;
+  animation: gradientFlow 18s ease infinite;
+  min-height: 100vh;
 }
 
 /* ---------- Header ---------- */
 .site-header {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 3.5rem 1rem;
   color: #ffffff;
 }
 
 .site-header h1 a {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
   font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .site-header p {
   opacity: 0.9;
+  margin-top: 0.5rem;
 }
 
-/* ---------- Content Container ---------- */
+/* ---------- Main Container ---------- */
 .container {
   max-width: 720px;
   margin: auto;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem;
 }
 
-/* ---------- Card Style (Medium-like) ---------- */
+/* ---------- Cards (Posts) ---------- */
 .post-preview,
 .post {
   background: #ffffff;
-  border-radius: 14px;
-  padding: 2.5rem;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-  animation: fadeUp 0.6s ease;
+  border-radius: 16px;
+  padding: 2.6rem;
+  margin-bottom: 2.8rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  animation: fadeUp 0.7s ease both;
 }
 
 /* ---------- Home Page ---------- */
 .post-preview h2 {
-  font-size: 1.7rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.75rem;
+  margin-bottom: 0.4rem;
 }
 
 .post-preview a {
@@ -73,30 +77,30 @@ body {
 
 .excerpt {
   color: #444;
-  margin-top: 0.6rem;
+  margin-top: 0.7rem;
 }
 
 /* ---------- Post Page ---------- */
 .post h1 {
-  font-size: 2.4rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .post-meta {
   color: #777;
   font-size: 0.95rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 }
 
 .post-content p {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
   font-size: 1.05rem;
 }
 
 /* ---------- Footer ---------- */
 .site-footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem 3rem;
   color: #ffffff;
   opacity: 0.85;
 }
@@ -105,7 +109,7 @@ body {
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
@@ -113,7 +117,7 @@ body {
   }
 }
 
-@keyframes gradientMove {
+@keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
@@ -123,6 +127,10 @@ body {
 @media (max-width: 600px) {
   .post-preview,
   .post {
-    padding: 1.6rem;
+    padding: 1.8rem;
+  }
+
+  .post h1 {
+    font-size: 2rem;
   }
 }
