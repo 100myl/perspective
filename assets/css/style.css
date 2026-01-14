@@ -1,61 +1,89 @@
+/* ---------- Global ---------- */
 body {
   font-family: 'Inter', sans-serif;
-  background: #ffffff;
-  color: #242424;
   margin: 0;
   line-height: 1.7;
+  color: #242424;
+
+  /* Colorful background */
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2,
+    #89f7fe
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
 }
 
+/* ---------- Header ---------- */
 .site-header {
   text-align: center;
   padding: 3rem 1rem;
-  border-bottom: 1px solid #eee;
+  color: #ffffff;
 }
 
 .site-header h1 a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   font-weight: 700;
 }
 
+.site-header p {
+  opacity: 0.9;
+}
+
+/* ---------- Content Container ---------- */
 .container {
-  max-width: 680px;
+  max-width: 720px;
   margin: auto;
   padding: 2rem 1rem;
 }
 
-/* Home page */
-.post-preview {
-  margin-bottom: 3rem;
+/* ---------- Card Style (Medium-like) ---------- */
+.post-preview,
+.post {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
   animation: fadeUp 0.6s ease;
 }
 
+/* ---------- Home Page ---------- */
 .post-preview h2 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
 }
 
 .post-preview a {
-  color: #000;
+  color: #111;
   text-decoration: none;
 }
 
+.post-preview a:hover {
+  text-decoration: underline;
+}
+
 .meta {
-  color: #757575;
+  color: #777;
   font-size: 0.9rem;
 }
 
 .excerpt {
   color: #444;
+  margin-top: 0.6rem;
 }
 
-/* Post page */
+/* ---------- Post Page ---------- */
 .post h1 {
   font-size: 2.4rem;
   margin-bottom: 0.5rem;
 }
 
 .post-meta {
-  color: #757575;
+  color: #777;
   font-size: 0.95rem;
   margin-bottom: 2rem;
 }
@@ -65,22 +93,36 @@ body {
   font-size: 1.05rem;
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
 .site-footer {
   text-align: center;
   padding: 2rem;
-  color: #777;
-  border-top: 1px solid #eee;
+  color: #ffffff;
+  opacity: 0.85;
 }
 
-/* Animation */
+/* ---------- Animations ---------- */
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  .post-preview,
+  .post {
+    padding: 1.6rem;
   }
 }
