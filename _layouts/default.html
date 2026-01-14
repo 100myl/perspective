@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | Pal's Blog</title>
+  <title>{{ page.title }} – {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- Medium-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
-  <!-- NAVBAR TABS -->
-  <nav class="navbar">
-    <div class="logo">Pal's Blog</div>
-    <div class="tabs">
-      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-      <a href="{{ '/blog' | relative_url }}" class="{% if page.url == '/blog/' %}active{% endif %}">Blog</a>
-      <a href="{{ '/about' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-    </div>
-  </nav>
+<header class="site-header">
+  <h1><a href="/">{{ site.title }}</a></h1>
+  <p>{{ site.description }}</p>
+</header>
 
-  <!-- PAGE CONTENT -->
-  <main class="content page-transition">
-    {{ content }}
-  </main>
+<main class="container">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  © {{ "now" | date: "%Y" }} Somil Pal
+</footer>
 
 </body>
 </html>
