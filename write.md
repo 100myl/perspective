@@ -6,7 +6,7 @@ title: Write a Post
 <div class="write-container">
   <h2>Write a new blog post ✍️</h2>
 
-  <form action="(https://formspree.io/f/mykkyrvk)" method="POST">
+  <form action="https://formspree.io/f/mykkyrvk" method="POST">
 
     <label>Post Title</label>
     <input type="text" name="title" placeholder="My awesome blog post" required>
