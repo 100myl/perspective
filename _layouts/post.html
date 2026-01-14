@@ -2,9 +2,14 @@
 layout: default
 ---
 
-<article class="fade-in">
+<article class="post">
   <h1>{{ page.title }}</h1>
-  <p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
-  <br>
-  {{ content }}
+
+  <div class="post-meta">
+    Somil Pal · {{ page.date | date: "%B %d, %Y" }}
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
 </article>
