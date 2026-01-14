@@ -1,17 +1,14 @@
 ---
-layout: default
-title: Blog
+layout: post
+title: Welcome to My Blog
 ---
 
-<h1>Blog Posts</h1>
+This is my **Medium-style blog** built using **GitHub Pages**.
 
-<div class="blog-grid">
-  {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" class="blog-card">
-      <h2>{{ post.title }}</h2>
-      <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
-      <p class="excerpt">{{ post.excerpt }}</p>
-      <span class="read-more">Read More →</span>
-    </a>
-  {% endfor %}
-</div>
+I created this space to write about:
+- Technology
+- Learning
+- Experiments
+- Ideas worth sharing
+
+Writing helps me think clearly — hope you enjoy reading 🚀
