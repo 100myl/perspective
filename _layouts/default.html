@@ -15,9 +15,21 @@
 <body>
 
 <header class="site-header">
-  <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+  <div class="header-top">
+    <h1>
+      <a href="{{ site.baseurl }}/">
+        <i class="fa-solid fa-house"></i> {{ site.title }}
+      </a>
+    </h1>
+
+    <a class="write-btn" href="#">
+      <i class="fa-solid fa-pen"></i> Write
+    </a>
+  </div>
+
   <p>{{ site.description }}</p>
 </header>
+
 
 <main class="container">
   {{ content }}
