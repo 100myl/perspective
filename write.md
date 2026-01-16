@@ -38,7 +38,7 @@ title: Write a new blog post ✍️
   <h1>Write a new blog post ✍️</h1>
   <p>Send me your draft / idea — I'll review and publish it on the blog!</p>
 
-  <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+  <form action="[https://formspree.io/f/mykkyrvk]" method="POST">
     <!-- Replace YOUR_FORM_ID_HERE with your actual Formspree endpoint (e.g. xabcdeyz) -->
 
     <input type="email" name="email" placeholder="Your email:" required>
